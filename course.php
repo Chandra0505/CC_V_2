@@ -15,8 +15,8 @@
 //			print_r($row);
 		$_SESSION["id"] = $row['c_id'];
 		$_SESSION["name"] = $row['c_name'];
-		
 		$_SESSION["price"] = $row['c_price'];
+		$_SESSION["image"] = $row['c_image'];
 			
 
 	}

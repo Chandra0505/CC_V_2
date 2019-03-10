@@ -8,7 +8,8 @@
 
 		$c_i = $_SESSION["co_id"] = $_SESSION["id"];
 		$a = $_SESSION["e_name"] = $_SESSION["name"];
-		$b = $_SESSION["e_price"] = $_SESSION["price"];
+		$c = $_SESSION["e_price"] = $_SESSION["price"];
+		$b = $_SESSION["e_image"] = $_SESSION["image"];
 	
 
 	
@@ -69,8 +70,8 @@
 				$eu_id = $assoc_array['id'];
 
 				if(!($ec_id == $c_i) and !($eu_id == $u_id)){
-					$sql = "INSERT INTO enroll_course (c_id, id, e_name, e_image)
-		VALUES ('$c_i','$u_id','$a', '$b')";
+					$sql = "INSERT INTO enroll_course (c_id, id, e_name, e_image, e_price)
+		VALUES ('$c_i','$u_id','$a', '$b', '$c')";
 					if ($conn->query($sql) === TRUE) {
 //						echo "New record created successfully";
 					} 

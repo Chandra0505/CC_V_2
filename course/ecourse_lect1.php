@@ -1,5 +1,5 @@
 <?php
-	require '../../admin/session.php';
+	require 'session.php';
 	
 ?>
 

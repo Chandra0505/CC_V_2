@@ -1,7 +1,6 @@
 <?php
 	require './admin/session.php';
-
-
+	
 ?>
 
 
