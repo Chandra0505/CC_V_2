@@ -216,7 +216,7 @@
                     e.preventDefault();
 					$("#loader").show();
                     $.ajax({
-                        url:'action.php',
+                        url:'./Admin/action.php',
                         method:'post',
                         data:$("#register-frm").serialize() + '&action=register',
                         success:function(response) {
@@ -260,7 +260,7 @@
                     e.preventDefault();
 					$("#loader").show();
                     $.ajax({
-                        url:'action.php',
+                        url:'./Admin/action.php',
                         method:'post',
                         data:$("#forgot-frm").serialize()+'&action=forgot',
                         success:function (response) {

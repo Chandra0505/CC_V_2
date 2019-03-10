@@ -3,8 +3,8 @@
 	ini_set('display_errors', 'On');
 	error_reporting(E_ALL);
 	require './functions/config.php';
-//	require './admin/session.php';
-	session_start();
+	require './admin/session.php';
+//	session_start();
 
 		$c_i = $_SESSION["co_id"] = $_SESSION["id"];
 		$a = $_SESSION["e_name"] = $_SESSION["name"];
@@ -12,22 +12,22 @@
 	
 
 	
-	function fetchAssocStatement($stmt){
-			if($stmt->num_rows>0)
-			{
-				$result = array();
-				$md = $stmt->result_metadata();
-				$params = array();
-				while($field = $md->fetch_field()) {
-					$params[] = &$result[$field->name];
-				}
-				call_user_func_array(array($stmt, 'bind_result'), $params);
-				if($stmt->fetch())
-					return $result;
-			}
-
-    		return null;
-			}
+//	function fetchAssocStatement($stmt){
+//			if($stmt->num_rows>0)
+//			{
+//				$result = array();
+//				$md = $stmt->result_metadata();
+//				$params = array();
+//				while($field = $md->fetch_field()) {
+//					$params[] = &$result[$field->name];
+//				}
+//				call_user_func_array(array($stmt, 'bind_result'), $params);
+//				if($stmt->fetch())
+//					return $result;
+//			}
+//
+//    		return null;
+//			}
 
 
 			$user = $_SESSION['email'];

@@ -1,3 +1,10 @@
+<?php
+	require '../../admin/session.php';
+	
+?>
+
+
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -196,7 +203,7 @@
 
 							<a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
 
-							<a class="nav-link" href="./Admin/logout.php"><i class="fa fa-power-off"></i>Logout</a>
+							<a class="nav-link" href="../Admin/logout.php"><i class="fa fa-power-off"></i>Logout</a>
 						</div>
 					</div>
 				</div>
