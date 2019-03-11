@@ -3,9 +3,6 @@
 	
 ?>
 
-
-
-
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -102,11 +99,11 @@ label:before {
 
 label[for*='1']:before {
 /*  content: '\f15c';*/
-  content: '\f0c3';
+  content: '\f14b';
 }
 
 label[for*='2']:before {
-  content: '\f14b';
+  content: '\f0c3';
 }
 
 label[for*='3']:before {

@@ -346,7 +346,7 @@
 				<div class="row">
 
 					<?php
-							$sql = "SELECT `e_id`, `c_id`, `id`, `e_price`, `e_name`, `e_image` FROM `enroll_course` WHERE id = $p order by c_id ASC";
+							$sql = "SELECT `e_id`, `c_id`, `id`, `e_price`, `e_name`, `e_image`, `e_link` FROM `enroll_course` WHERE id = $p order by c_id ASC";
 							
 							$result = $conn->query($sql); 
 		 if ($result->num_rows > 0) {
@@ -357,9 +357,17 @@
 					<div class="col-md-4">
 						<div class="card">
 							<img class="card-img-top" src="<?php echo $row['e_image']; ?>" alt="Card image cap">
+							
 							<div class="course_body">
-								<h3 class="course_title"><a href="course.html">
-										<?php echo $row['e_name']; ?></a></h3>
+								<center><h3 class="course_title"><a href="<?php echo "../".$row["e_link"]; ?>">
+									
+										<?php echo $row['e_name']; ?></a></h3></center>
+										
+<!--										<?php echo $_SESSION["e_link"]; ?>-->
+									
+<!--									<?php echo "..".$row["e_link"]; ?>-->
+									
+										
 								<div class="course_teacher">Ms. Lucius</div>
 								<div class="course_text">
 									<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>

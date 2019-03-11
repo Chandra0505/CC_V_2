@@ -1,23 +1,21 @@
 <?php
 	require './admin/session.php';
 //	print_r($assoc_array);
-//$u_id = $assoc_array['id'];
+$u_id = $assoc_array['id'];
 //			this code is for fechin link for course
-//				if($stmt = $conn->prepare("SELECT * FROM enroll_course WHERE id=?")){
-//				$stmt -> bind_param('i', $u_id);
-//    			$stmt->execute();
-//    			$stmt->store_result();
-//				$assoc_array = fetchAssocStatement($stmt);
+				if($stmt = $conn->prepare("SELECT * FROM enroll_course WHERE id=?")){
+				$stmt -> bind_param('i', $u_id);
+    			$stmt->execute();
+    			$stmt->store_result();
+				$assoc_array = fetchAssocStatement($stmt);
 //				print_r($assoc_array);
-//				
-//				$e_link = $assoc_array['e_link'];
-//				
-//				$p = $_SESSION["$e_link"] = $e_link;
-//				
-//			}
+				
+				$e_link = $assoc_array['e_link'];
+				
+				$link = $_SESSION["$e_link"] = $e_link;
+				
+			}
 
-
-	$e_link = $_SESSION["e_link"]
 ?>
 
 
@@ -98,34 +96,7 @@
 						</ul>
 					</li>
 
-					<li class="menu-title">Icons</li><!-- /.menu-title -->
-
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>
-							<li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
-					</li>
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-							<li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-							<li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-						</ul>
-					</li>
-
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-							<li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-						</ul>
-					</li>
+					
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
@@ -240,7 +211,7 @@
 								</div>
 								<div class="card-body">
 									<div class="sufee-alert alert with-close alert-primary alert-dismissible fade show">
-                                        <span class="badge badge-pill badge-warning">Notice</span>
+                                        <span class="badge badge-pill badge-danger">Notice</span>
                                         You have already enrolled in this course.
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -253,9 +224,9 @@
 										<hr>
 										<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p><br>
 										
-											
-										<a href="<?php echo $e_link; ?>" class="btn btn-success btn-lg">Start Learning</a>
-<!--										<a href="http://google.com" class="btn btn-success btn-lg">Start Learning</a>-->
+										<a href="<?php echo $link	; ?>" class="btn btn-success btn-lg">Start Learning</a>&nbsp;&nbsp;
+										
+										<a href="http://google.com" class="btn btn-success btn-lg">Go to Dashboard</a>
 										
 <!--											<button type="button" class="btn btn-success btn-lg">Success</button>-->
 											
