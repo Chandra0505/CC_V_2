@@ -5,23 +5,24 @@
 
 //	print_r($assoc_array);
 	$u_id = $assoc_array['id'];
+	$p = $_SESSION["user_id"] = $u_id;
 
 
-			if($stmt = $conn->prepare("SELECT * FROM enroll_course WHERE id=?")){
-				$stmt -> bind_param('i', $u_id);
-    			$stmt->execute();
-    			$stmt->store_result();
-				$assoc_array = fetchAssocStatement($stmt);
-//				print_r($assoc_array);
-				
-				$u_id = $assoc_array['id'];
-				$co_id = $assoc_array['c_id'];
-				
-				$p = $_SESSION["user_id"] = $u_id;
-				$q = $_SESSION["course_id"] = $c_id;
-				
-				
-			}
+//			if($stmt = $conn->prepare("SELECT * FROM enroll_course WHERE id=?")){
+//				$stmt -> bind_param('i', $u_id);
+//    			$stmt->execute();
+//    			$stmt->store_result();
+//				$assoc_array = fetchAssocStatement($stmt);
+////				print_r($assoc_array);
+//				
+//				$u_id = $assoc_array['id'];
+//				$co_id = $assoc_array['c_id'];
+//				
+//				$p = $_SESSION["user_id"] = $u_id;
+////				$q = $_SESSION["course_id"] = $c_id;
+//				
+//				
+//			}
 
 
 ?>
@@ -341,9 +342,10 @@
 
 
 
-				
-						
-						<?php
+
+				<div class="row">
+
+					<?php
 							$sql = "SELECT `e_id`, `c_id`, `id`, `e_price`, `e_name`, `e_image` FROM `enroll_course` WHERE id = $p order by c_id ASC";
 							
 							$result = $conn->query($sql); 
@@ -352,21 +354,21 @@
 		while($row = $result->fetch_assoc()) {
 //			print_r($row);
 			?>
-				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-md-4">
 						<div class="card">
 							<img class="card-img-top" src="<?php echo $row['e_image']; ?>" alt="Card image cap">
 							<div class="course_body">
-								<h3 class="course_title"><a href="course.html"><?php echo $row['e_name']; ?></a></h3>
+								<h3 class="course_title"><a href="course.html">
+										<?php echo $row['e_name']; ?></a></h3>
 								<div class="course_teacher">Ms. Lucius</div>
 								<div class="course_text">
 									<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
 								</div>
 							</div>
 
-						
-						
-						
+
+
+
 							<div class="course_footer">
 								<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
 									<div class="course_info">
@@ -382,12 +384,10 @@
 							</div>
 						</div>
 					</div>
-					
-					
-	<?php
-          	}
-	}
-?>
+
+
+
+					<!--
 					<div class="col-md-4">
 						<div class="card">
 							<img class="card-img-top" src="images/course_4.jpg" alt="Card image cap">
@@ -414,6 +414,8 @@
 							</div>
 						</div>
 					</div>
+-->
+					<!--
 					<div class="col-md-4">
 						<div class="card">
 							<img class="card-img-top" src="images/course_5.jpg" alt="Card image cap">
@@ -440,6 +442,8 @@
 							</div>
 						</div>
 					</div>
+-->
+					<!--
 					<div class="col-md-6">
 						<div class="card">
 							<img class="card-img-top" src="images/course_8.jpg" alt="Card image cap">
@@ -466,6 +470,8 @@
 							</div>
 						</div>
 					</div>
+-->
+					<!--
 					<div class="col-md-6">
 						<div class="card">
 							<img class="card-img-top" src="images/course_3.jpg" alt="Card image cap">
@@ -492,6 +498,8 @@
 							</div>
 						</div>
 					</div>
+-->
+					<!--
 					<div class="col-md-6">
 						<div class="card">
 							<img class="card-img-top" src="images/course_5.jpg" alt="Card image cap">
@@ -518,6 +526,8 @@
 							</div>
 						</div>
 					</div>
+-->
+					<!--
 					<div class="col-md-6">
 						<div class="card">
 							<img class="card-img-top" src="images/course_1.jpg" alt="Card image cap">
@@ -544,9 +554,15 @@
 							</div>
 						</div>
 					</div>
-
-
+-->
+					<?php
+          	}
+	}
+?>
 				</div><!-- .row  change card body css from course body -->
+
+
+
 
 
 

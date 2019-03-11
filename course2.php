@@ -7,7 +7,7 @@
 	ini_set('display_errors', 'On');
 	error_reporting(E_ALL);
 
-	$sql = "SELECT `c_id`, `c_name`, `c_image`, `c_price`, `c_discount` FROM `course` WHERE c_id= 2";
+	$sql = "SELECT `c_id`, `c_name`, `c_image`, `c_price`, `c_discount`, `e_link` FROM `course` WHERE c_id= 2";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 
@@ -18,6 +18,7 @@
 		$_SESSION["name"] = $row['c_name'];
 		$_SESSION["price"] = $row['c_price'];
 		$_SESSION["image"] = $row['c_image'];
+		$_SESSION["link"] = $row['e_link'];	
 			
 
 	}

@@ -10,6 +10,7 @@
 		$a = $_SESSION["e_name"] = $_SESSION["name"];
 		$c = $_SESSION["e_price"] = $_SESSION["price"];
 		$b = $_SESSION["e_image"] = $_SESSION["image"];
+		$d = $_SESSION["e_link"] = $_SESSION["link"];
 	
 
 	
@@ -70,8 +71,8 @@
 				$eu_id = $assoc_array['id'];
 
 				if(!($ec_id == $c_i) and !($eu_id == $u_id)){
-					$sql = "INSERT INTO enroll_course (c_id, id, e_name, e_image, e_price)
-		VALUES ('$c_i','$u_id','$a', '$b', '$c')";
+					$sql = "INSERT INTO enroll_course (c_id, id, e_name, e_image, e_price, e_link)
+		VALUES ('$c_i','$u_id','$a', '$b', '$c', '$d')";
 					if ($conn->query($sql) === TRUE) {
 //						echo "New record created successfully";
 					} 
@@ -132,7 +133,7 @@
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+						<a href="./Admin/index.php"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
 					</li>
 					<li class="menu-title">UI elements</li><!-- /.menu-title -->
 					<li class="menu-item-has-children active dropdown">
@@ -305,7 +306,8 @@
 						</a>
 
 						<div class="user-menu dropdown-menu">
-							<a class="nav-link" href="#"><i class="fa fa-user"></i>My Profile</a>
+							<a class="nav-link" href="#"><i class="fa fa-user"></i><?= $username;?></a>
+<!--							<a class="nav-link" href="#"><i class="fa fa-user"></i>My Profile</a>-->
 
 							<a class="nav-link" href="#"><i class="fa fa-bell-o"></i>Notifications <span class="count">13</span></a>
 
@@ -318,33 +320,6 @@
 			</div>
 		</header><!-- /header -->
 		<!-- Header-->
-
-		<!--
-        <div class="breadcrumbs">
-            <div class="breadcrumbs-inner">
-                <div class="row m-0">
-                    <div class="col-sm-4">
-                        <div class="page-header float-left">
-                            <div class="page-title">
-                                <h1>Dashboard</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="page-header float-right">
-                            <div class="page-title">
-                                <ol class="breadcrumb text-right">
-                                    <li><a href="#">Dashboard</a></li>
-                                    <li><a href="#">UI Elements</a></li>
-                                    <li class="active">Alerts</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
--->
 
 		<div class="content">
 			<div class="animated fadeIn">
@@ -360,20 +335,10 @@
 									<strong class="card-title">Congratulations!!</strong>
 								</div>
 								<div class="card-body">
-									<!--
-                                    <div class="sufee-alert alert with-close alert-primary alert-dismissible fade show">
-                                        <span class="badge badge-pill badge-primary">Success</span>
-                                        You successfully read this important alert.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
--->
-
 
 									<div class="sufee-alert alert with-close alert-success alert-dismissible fade show">
 										<span class="badge badge-pill badge-success">Success</span>
-										You successfully read this important alert.
+										You have successfully enrolled in this course.
 										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -383,13 +348,16 @@
 										<h4 class="alert-heading">Well done!</h4>
 										<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
 										<hr>
-										<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+										<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p><br>
 										
+<!--
 										<form action="#">
 											<button type="submit" class="newsletter_button">Enroll</button>
 										</form>
+-->
 										
-										
+										<a href="<?php echo $d; ?>" class="btn btn-success btn-lg">Start Learning</a>
+										<a href="http://google.com" class="btn btn-success btn-lg">Go to Dashboard</a>
 										
 									</div>
 

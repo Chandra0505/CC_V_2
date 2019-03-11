@@ -228,14 +228,23 @@
 									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptas ipsa ut rem natus, esse ex numquam, aliquid repellat quasi nesciunt eius. Accusantium quos aliquam, repellat sapiente quaerat impedit veniam?</p>
 									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quos ipsa ducimus sint nihil cupiditate placeat nobis sequi eum, provident illo quibusdam, eaque quas deserunt nam nostrum laudantium necessitatibus nulla.</p>
 									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad excepturi blanditiis doloremque distinctio rerum minima eum ullam adipisci, provident voluptate quibusdam aspernatur nam quasi incidunt cupiditate, consectetur aperiam rem? Maxime.</p>
-									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p><br>
 
 									<div class="iframe-container">
 										<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9YffrCViTVk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 									</div>
 
-									<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+									<div>
+										<br><p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p><br>
+										
+									</div>
+									
+									
+									<div class="iframe-container">
+										<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9YffrCViTVk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+									</div>
 
 
 

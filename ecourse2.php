@@ -1,24 +1,8 @@
 <?php
 	require './admin/session.php';
-//	print_r($assoc_array);
-//$u_id = $assoc_array['id'];
-//			this code is for fechin link for course
-//				if($stmt = $conn->prepare("SELECT * FROM enroll_course WHERE id=?")){
-//				$stmt -> bind_param('i', $u_id);
-//    			$stmt->execute();
-//    			$stmt->store_result();
-//				$assoc_array = fetchAssocStatement($stmt);
-//				print_r($assoc_array);
-//				
-//				$e_link = $assoc_array['e_link'];
-//				
-//				$p = $_SESSION["$e_link"] = $e_link;
-//				
-//			}
-
-
-	$e_link = $_SESSION["e_link"]
+	
 ?>
+
 
 
 
@@ -51,6 +35,135 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+
+	<style>
+		/*
+		*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+/*
+html, body {
+  height: 100vh;
+}
+*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*  padding: 40px;*/
+  font: 14px/1.5 'Open Sans',sans-serif;
+  color: #345;
+  background: #f0f2f4;
+}
+
+p:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+main {
+  max-width: 100%;
+/*  max-width: 800px;*/
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+/*  content: '\f15c';*/
+  content: '\f14b';
+}
+
+label[for*='2']:before {
+  content: '\f0c3';
+}
+
+label[for*='3']:before {
+	 content: '\f0a1'; 
+}
+
+label[for*='4']:before {
+  content: '\f0ad';
+}
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: green;
+/*  color: #0af;*/
+  border: 1px solid #abc;
+  border-top: 2px solid green;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
+}
+		
+/*
+#details,#progress{
+        display: none;
+    }
+		
+		
+
+		
+*/
+	</style>
+
 	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 
 </head>
@@ -66,39 +179,31 @@
 					<li>
 						<a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
 					</li>
-					<li class="menu-title">UI elements</li><!-- /.menu-title -->
-					<li class="menu-item-has-children active dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Components</a>
+					<li class="menu-title">Course Overview</li><!-- /.menu-title -->
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Week 1</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
-							<li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
-							<li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
-
-							<li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>
-							<li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>
-							<li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>
-							<li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>
-							<li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
-							<li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
-							<li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
+							<li><i class="fa fa-table"></i><a href="course/ecourse_lect1.php">Lecture 1</a></li>
+							
+							<li><i class="fa fa-table"></i><a href="tables-data.html">Quiz 1</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Week 2</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
-							<li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
+							<li><i class="fa fa-table"></i><a href="tables-basic.html">Lecture 2</a></li>
+							<li><i class="fa fa-table"></i><a href="tables-data.html">Quiz 2</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i fclass="menu-icon fa fa-th"></i>Forms</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Week 3</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-							<li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+							<li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Lecture 3</a></li>
+							<li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Quiz 3</a></li>
 						</ul>
 					</li>
 
-					<li class="menu-title">Icons</li><!-- /.menu-title -->
+					<li class="menu-title">Useful Resourses</li><!-- /.menu-title -->
 
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
@@ -110,22 +215,8 @@
 					<li>
 						<a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
 					</li>
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-							<li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-							<li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-						</ul>
-					</li>
 
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-							<li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-						</ul>
-					</li>
+
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
@@ -141,7 +232,7 @@
 		<header id="header" class="header">
 			<div class="top-left">
 				<div class="navbar-header">
-<!--
+					<!--
 					<a class="navbar-brand" href="./"><img src="./Admin/images/logo.png" alt="Logo"></a>
 					<a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
 -->
@@ -227,48 +318,108 @@
 
 		<div class="content">
 			<div class="animated fadeIn">
-
-
 				<div class="alerts">
 					<div class="row">
-
-						<div class="col-md-12">
+						<div class="col-md-12" id="progress">
 
 							<div class="card">
 								<div class="card-header">
-									<strong class="card-title">Sorry!!</strong>
+									<h4>Your Progress</h4>
 								</div>
 								<div class="card-body">
-									<div class="sufee-alert alert with-close alert-primary alert-dismissible fade show">
-                                        <span class="badge badge-pill badge-warning">Notice</span>
-                                        You have already enrolled in this course.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-									<div class="alert alert-success" role="alert">
-										<h4 class="alert-heading">Well done!</h4>
-										<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-										<hr>
-										<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p><br>
-										
-											
-										<a href="<?php echo $e_link; ?>" class="btn btn-success btn-lg">Start Learning</a>
-<!--										<a href="http://google.com" class="btn btn-success btn-lg">Start Learning</a>-->
-										
-<!--											<button type="button" class="btn btn-success btn-lg">Success</button>-->
-											
-											
-									
+									<p class="muted">You have completed this course:</p>
+									<div class="progress mb-2">
+										<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
 									</div>
+									<div class="progress mb-2">
+										<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+									</div>
+
+									<!--
+									<div class="progress mb-2">
+										<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+									</div>
+-->
+
 								</div>
 							</div>
 						</div>
-					</div>
+
+						<!--code for course details						-->
+						<div class="col-lg-12" id="details">
+							<div class="card">
+								<div class="card-header">
+									<h4>Course Details</h4>
+								</div>
+								<div class="card-body">
+
+									<main>
+
+										<input id="tab1" type="radio" name="tabs" checked>
+										<label for="tab1">Course Description</label>
+
+										<input id="tab2" type="radio" name="tabs">
+										<label for="tab2">Course Content</label>
+
+										<input id="tab3" type="radio" name="tabs">
+										<label for="tab3">Anouncement</label>
+
+										<input id="tab4" type="radio" name="tabs">
+										<label for="tab4">Settings</label>
+
+										<section id="content1">
+											<p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+
+												<?php include("chenk.php") ?>
+
+											</p>
+											<p>
+												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+											</p>
+										</section>
+
+										<section id="content2">
+											<p>
+												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+											</p>
+											<p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p>
+										</section>
+
+										<section id="content3">
+											<p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p>
+											<p>
+												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+											</p>
+										</section>
+
+										<section id="content4">
+											<p>
+												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+											</p>
+											<p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p>
+										</section>
+
+									</main>
+
+
+
+								</div>
+							</div>
+						</div> <!-- course details -->
+
+					</div> <!-- row -->
 				</div> <!-- .alerts -->
-
-
 			</div><!-- .animated -->
 		</div><!-- .content -->
 
@@ -278,7 +429,7 @@
 			<div class="footer-inner bg-white">
 				<div class="row">
 					<div class="col-sm-6">
-						Copyright &copy; 2018 
+						Copyright &copy; 2018
 					</div>
 					<div class="col-sm-6 text-right">
 						Designed by <a href="#">Moon4Light</a>
@@ -298,6 +449,23 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 	<script src="./Admin/assets/js/main.js"></script>
+
+
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {
+				$("#lecture-btn").click(function() {
+					$("#lecture").show();
+					$("#details").hide();
+				});
+
+
+
+			});
+
+		})(jQuery);
+	</script>
+
 
 
 </body>

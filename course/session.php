@@ -1,6 +1,19 @@
 <?php
 	session_start();
-	require './functions/config.php';
+	$dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "root";
+    $dbname = "cube_test";
+
+    $conn  = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
+    if($conn->connect_error){
+        die("Could not connect to the database!" . $conn->connect_error);
+    }
+    else {
+//        echo "Connected successfully";
+    }
+
+
 	$user = $_SESSION['email'];
 	
 	function fetchAssocStatement($stmt){
@@ -33,7 +46,7 @@
 //				echo $username.$email.$created;
 				
 				if(!isset($user)){
-					header("location:./login.php");
+					header("location:../login.php");
 				}
 				
 				
