@@ -49,6 +49,7 @@
 			width: 100%;
 			height: 100%;
 		}
+
 	</style>
 
 
@@ -78,7 +79,7 @@
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="fa fa-table"></i><a href="#">Lecture 1</a></li>
 
-							<li><i class="fa fa-table"></i><a href="tables-data.html">Quiz 1</a></li>
+							<li><i class="fa fa-table"></i><a href="quiz.php">Quiz 1</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children dropdown">
@@ -217,9 +218,11 @@
 
 							<div class="card">
 								<div class="card-header">
-									<center>
-										<h4>Lecture 1 - What is Industry 4.0 ?</h4>
-									</center>
+
+
+									<h4 class="text-center">Lecture 1 - What is Industry 4.0 ?</h4>
+
+
 								</div>
 								<div class="card-body">
 									<p class="muted">You have completed this course:</p>
@@ -234,16 +237,17 @@
 									</div>
 
 									<div>
-										<br><p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
-										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
-										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
-										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
-										
 										<br>
-										
+										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+										<p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste voluptas excepturi quo nulla eius quis quas sequi. Aliquam modi incidunt ad aliquid, aut laboriosam eum. Voluptates itaque tenetur, molestias.</p>
+
+										<br>
+
 									</div>
-									
-									
+
+
 									<div class="iframe-container">
 										<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9YffrCViTVk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -325,6 +329,7 @@
 			});
 
 		})(jQuery);
+
 	</script>
 
 

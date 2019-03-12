@@ -359,12 +359,14 @@
 							<img class="card-img-top" src="<?php echo $row['e_image']; ?>" alt="Card image cap">
 							
 							<div class="course_body">
-								<center><h3 class="course_title"><a href="<?php echo "../".$row["e_link"]; ?>">
+								<h3 class="course_title"><a href="<?php echo "../".$row["e_link"]; ?>">
 									
-										<?php echo $row['e_name']; ?></a></h3></center>
+										<?php echo $row['e_name']; ?></a></h3>
+										
+										
 										
 <!--										<?php echo $_SESSION["e_link"]; ?>-->
-									
+<!--class="text-center" 									-->
 <!--									<?php echo "..".$row["e_link"]; ?>-->
 									
 										
