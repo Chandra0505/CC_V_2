@@ -107,11 +107,14 @@
             $selected = $_POST['quizcheck'];
 //				print_r($selected);
             
-            $q1= "SELECT `ques_id`, `question`, `ans_id` FROM `question`";
+            $q1= "SELECT  * FROM `question`";
             $ansresults = mysqli_query($conn,$q1);
             $i = 1;
             while($rows = mysqli_fetch_array($ansresults)) {
-               print_r($rows);
+//               print_r($rows);
+//               print_r($selected[$i]);
+				
+//               print_r($rows['ans_id']);
             	$flag = $rows['ans_id'] == $selected[$i];
             	
             			if($flag){
@@ -146,9 +149,9 @@
 
 			<?php 
 
-            $name = $_SESSION['username'];
-            $finalresult = " insert into usersession(name,u_q_id, u_a_id) values ('$name','5','$Resultans') ";
-            $queryresult= mysqli_query($con,$finalresult); 
+//            $name = $_SESSION['username'];
+//            $finalresult = " insert into usersession(name,u_q_id, u_a_id) values ('$name','5','$Resultans') ";
+//            $queryresult= mysqli_query($con,$finalresult); 
             // if($queryresult){
             // 	echo "successssss";
             // }
@@ -157,7 +160,7 @@
 
 		</table>
 
-		<a href="logout.php" class="btn btn-success"> LOGOUT </a>
+		<a href="../logout.php" class="btn btn-success"> LOGOUT </a>
 	</div>
 </body>
 
