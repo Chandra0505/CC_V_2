@@ -8,11 +8,11 @@
 [1]  Login system:- login(without activation mail),
 register(done), forgot password(with mail done)
 
-[2] Database Design(need to be done)
+[2] Database Design(need to be done 50%)
 
 [3] Quiz System(need to be done 50 %)
 
-[4] Certification
+[4] Certification (started woriking on it)
 
 [5] Integrate payment gateway
 
@@ -20,7 +20,7 @@ register(done), forgot password(with mail done)
 
 [7] giving structure to the home page
 
-[8] design admin page and diffenentiate user form admin login css is not working for the current dashboard So, check it. Now I'm going to change the admin portal.
+[8] design admin page and diffenentiate user form admin login.
 
 [9] design profile page
 
