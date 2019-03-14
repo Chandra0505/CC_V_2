@@ -1,9 +1,9 @@
 # CC_V_2
 
-The task to be done are:
+##The task to be done are:
 1. check circular progress bar of jquary
 
-
+## Tasks which are done either completely or paritially.
 
 [1]  Login system:- login(without activation mail),
 register(done), forgot password(with mail done)
