@@ -107,7 +107,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
+						<a href="tcpdf-certificate/index.php"> <i class="menu-icon ti-email"></i>View Certificate </a>
 					</li>
 
 
