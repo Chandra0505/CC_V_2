@@ -182,14 +182,14 @@ input:checked + label {
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="fa fa-table"></i><a href="course/ecourse_lect1.php">Lecture 1</a></li>
 							
-							<li><i class="fa fa-table"></i><a href="tables-data.html">Quiz 1</a></li>
+							<li><i class="fa fa-table"></i><a href="course/quiz2.php">Quiz 1</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Week 2</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="fa fa-table"></i><a href="tables-basic.html">Lecture 2</a></li>
-							<li><i class="fa fa-table"></i><a href="tables-data.html">Quiz 2</a></li>
+							<li><i class="fa fa-table"></i><a href="course/quiz.php">Quiz 2</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children dropdown">
