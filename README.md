@@ -12,7 +12,7 @@ register(done), forgot password(with mail done)
 
 [3] Quiz System(need to be done 50 %)
 
-[4] Certification (started woriking on it)
+[4] Certification (done now decide own template)
 
 [5] Integrate payment gateway
 
