@@ -88,5 +88,4 @@ certificate_print_text($pdf, $x, $y + 122, 'C', $fontserif, '', 10, "In only 206
 
 header ("Content-Type: application/pdf");
 //echo $pdf->Output('', 'S');
-echo $pdf->Output('certificate.pdf', 'I');	
-//echo $pdf->Output('a.pdf','.pdf', 'D');
+echo $pdf->Output('certificate of appreciation.pdf', 'I');

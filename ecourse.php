@@ -320,17 +320,21 @@ input:checked + label {
 						<div class="col-md-12" id="progress">
 
 							<div class="card">
+<!--
 								<div class="card-header">
 									<h4>Your Progress</h4>
 								</div>
+-->
 								<div class="card-body">
 									<p class="muted">You have completed this course:</p>
 									<div class="progress mb-2">
 										<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
 									</div>
+<!--
 									<div class="progress mb-2">
 										<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
 									</div>
+-->
 
 									<!--
 									<div class="progress mb-2">
@@ -374,6 +378,10 @@ input:checked + label {
 											</p>
 											<p>
 												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus error ea, porro dignissimos dolorem, optio, sequi officia neque quibusdam aliquam dolorum ratione, esse asperiores iste modi. Nam, enim, reiciendis.
+											</p><p>
+												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus error ea, porro dignissimos dolorem, optio, sequi officia neque quibusdam aliquam dolorum ratione, esse asperiores iste modi. Nam, enim, reiciendis.
 											</p>
 										</section>
 
@@ -382,6 +390,15 @@ input:checked + label {
 												Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin.
 											</p>
 											<p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p><p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p><p>
+												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
+												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+											</p><p>
 												Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto
 												pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
 											</p>
