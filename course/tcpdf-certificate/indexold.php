@@ -15,25 +15,25 @@ $pdf->SetProtection(array('modify'));
 $pdf->setPrintHeader(false);
 $pdf->setPrintFooter(false);
 $pdf->SetAutoPageBreak(false, 0);
-//$pdf->AddPage();
-$pdf->AddPage('L');
+$pdf->AddPage();
+//$pdf->AddPage('L');
 
     $x = 10;
-    $y = 30;
+    $y = 40;
 
-    $sealx = 240;
-    $sealy = 164;
+    $sealx = 150;
+    $sealy = 220;
     $seal = realpath("./seal.png");
 
     $sigx = 30;
-    $sigy = 172;
+    $sigy = 230;
     $sig = realpath("./signature.png");
 
     $custx = 30;
     $custy = 230;
 
-    $wmarkx = 70;
-    $wmarky = 22;
+    $wmarkx = 26;
+    $wmarky = 58;
     $wmarkw = 158;
     $wmarkh = 170;
     $wmark = realpath("./watermark.png");
@@ -50,13 +50,13 @@ $fontserif = 'times';
 
 // border
 $pdf->SetLineStyle(array('width' => 1.5, 'color' => array(0,0,0)));
-$pdf->Rect(10, 10, 278, 192);
+$pdf->Rect(10, 10, 190, 277);
 // create middle line border
 $pdf->SetLineStyle(array('width' => 0.2, 'color' => array(64,64,64)));
-$pdf->Rect(13, 13, 272, 186);
+$pdf->Rect(13, 13, 184, 271);
 // create inner line border
 $pdf->SetLineStyle(array('width' => 1.0, 'color' => array(128,128,128)));
-$pdf->Rect(16, 16, 265, 181);
+$pdf->Rect(16, 16, 178, 265);
 
 
 // Set alpha to semi-transparency
@@ -88,5 +88,4 @@ certificate_print_text($pdf, $x, $y + 122, 'C', $fontserif, '', 10, "In only 206
 
 header ("Content-Type: application/pdf");
 //echo $pdf->Output('', 'S');
-echo $pdf->Output('certificate of appreciation.pdf', 'I');	
-
+echo $pdf->Output('certificate of appreciation.pdf', 'I');

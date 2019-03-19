@@ -106,7 +106,7 @@
                   <p class="card-header text-center" > <?php echo $_SESSION['username']; ?>, you have to select only one out of 4. Best of Luck <i class="fa fa-thumbs-up"></i>	 </p>
         </div><br>
         
-        <form action="checked.php" method="post">
+        <form action="checked.php" method="POST">
         
         <?php
 			
@@ -159,8 +159,6 @@
         <br>
 		<a href="logout.php" class="btn btn-primary d-block m-auto text-white" > Logout </a> <br>
         
-		
-		
 		
 	</div>
 
