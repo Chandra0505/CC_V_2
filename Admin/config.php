@@ -1,8 +1,8 @@
 <?php
     $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "root";
-    $dbname = "cube_test";
+    $dbuser = "admin_chandradb";
+    $dbpass = "FKMgFcbF3b";
+    $dbname = "admin_moocdb";
 
     $conn  = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
     if($conn->connect_error){
